@@ -1,130 +1,205 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Mahasiswa</title>
+<style>
+  #about {
+    background-color: #f2f2f2;
+    <border:1p solid #d0d7de;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #about h2 {
+    color: #333;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+  }
+  
+  #about h3 {
+        color: #1f4e78;
+      margin-bottom: 6px;
+  }
+
+  #about p {
+    margin: 6px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  #about ol {
+        color: #333333;
+        margin: 8px 24px;
+        padding: 8px 24px;
+        border: 1px solid #e6e6e6;
+  }
+
+  #contact {
+        background-color: "f8fafc";
+        border: 1px solid #cbd5e1;
+        padding: 20px;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+  }
+
+  #contact h2 {
+        color: #003366;
+        border-bottom: 2px solid #003366;
+        padding-bottom: 6px;
+        margin-bottom: 16px;
+  }
+
+  .form-group {
+        margin: 12px 0;
+  }
+
+  #contact label {
+    color: #111827;
+    font-weight: bold;
+  }
+
+  .input.form {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    padding: 8px;
+    margin: 4px 0;  
+    border: 1px solid #94a3b8;
+  }
+
+  #contact button {
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 14px;
+    margin: 8px 6px 0 0;
+    border: 1px solid #003366;
+  }
+ </style>
 </head>
 <body>
    <header>
     <h1>Profil Mahasiswa</h1>
     <nav>
-        <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
-    </header>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
 
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
             <p>Halo, saya Fahri Septa Ramadhan. Saya sedang mempelajari Pemrograman Web Dasar.</p>
-            <img src="Foto Profile.jpeg" alt="Foto Profil" width="200">
-        </section>
+            <img src="Foto Profile.jpeg" alt="Foto Profil"width="200"> 
+          </section>
 
-        <section id="about">
+          <section id="about">
             <h2>Tentang Saya</h2>
-            <p>Saya adalah mahasiswa program studi informasi.</p>
+            <article>
+              <h3>Profil Singkat</h3>
+              <p>Saya adalah mahasiswa program studi informasi.</p>
 
-            <h3>Target Belajar</h3>
-            <ol>
+              <h3>Target Belajar</h3>
+               <ol>
                 <li>Memahami struktur HTML5.</li>
                 <li>Menyusun halaman web sementik.</li>
                 <li>Memvalidasi dokumen HTML.</li>
-            </ol>
-        </article>
+               </ol>
+          </article>
+          <p>Saya Adalah seorang mahasiswa yang sedang mempelajari pemrograman web development</p>
         </section>
+
         <section id="contact">
-            <h2>Kontak</h2>
-            <p>Kunjungi <a href="https://github.com/2622500006/2622500006-PWD-SI1A-26271">profil GitHub saya</a></p>
-        </section>
-    </main>
+          <h2>kontak</h2>
+          <p>Kunjungi <a href="https://github.com/2622500006/2622500006-PWD-SI1A-26271">profil GitHub saya</a></p>
+    </form>
+    </fieldset>
+           <form action="index.html" method="get">
+               <div class="form-group">
+                 <label for="name">Nama Lengkap</label><br>
+                 <input class="input form"
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="MasukkanNama Lengkap"
+                        minlength="3"
+                        maxlength="50"
+                        required>
+               </div>
 
-    <footer>
-        <p>&copy; 2026Fahri Septa Ramadhan [2622500006]</p>
-    </footer>
-</body>
-</html>
-<section id="contact">
-    <h2>Kontak</h2>
-    <p>Kunjungi <a href="https://github.com/2622500006/2622500006-PWD-SI1A-26271">profil GitHub saya</a></p>
-
-    <form action="index.html" method="get">
-        <div class="form-group">
-            <label for="name">Fahri Septa Ramadhan</label><br>
-            <input class="input form"
-                   type="text"
-                     id="name"
-                        name="name"
-                          placeholder="Fahri Septa Ramadhan"
-                          minlength="3"
-                            maxlength="50"
-                              required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email</label><br>
-            <input class="input form"
-                   type="email"
-                     id="email"
+               <div class="form-group">
+                 <label for="email">Email</label><br>
+                 <input class="input form"
+                        type="email" 
+                        id="email" 
                         name="email"
-                          placeholder="nama@email.com"
-                          required>
-        </div>
+                        placeholder="Masukkan Email Anda"
+                        required>
+                </div>
 
-        <div class="form-group">
-            <label for="semester">Semester</label><br>
-            <input class="input form"
-                   type="number"
-                     id="semester"
-                        name="semester"
+                <div class="form-group">
+                   <label for="semester">Semester</label><br>
+                   <input class="input form"
+                          type="number"
+                          id="semester"
+                          name="semester"
                           min="1"
                           max="14"
                           required>
+                </div>
+
+                <div class="form group">
+                  <label for="tanggal">Tanggal Kunjungan</label><br />
+                  <input class="input form" 
+                         type="date" 
+                         id="tanggal" 
+                         required>
+                </div>
+
+                <div class="form group">
+                   <p>Jenis Pesan</p>
+                   <input type="radio" id="pertanyaan" name="jenis pesan"
+                          value="pertanyaan" required>
+                   <label for="pertanyaan">Pertanyaan</label>
+                   <input type="radio" id="saran" name="jenis pesan" 
+                          value="saran" required>
+                   <label for="saran">Saran</label>
+                </div>
+
+                <div class="form group">
+                  <label for="prodi">Program Studi</label><br>
+                  <select class="input form" id="prodi" name="prodi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="informatika">Informatika</option>
+                    <option value="sistem informasi">Sistem Informasi</option>
+          </select>
         </div>
 
         <div class="form group">
-            <label for="tanggal">Tanggal Kunjungan</label>
-            <input class="input form"
-                   type="date"
-                     id="tanggal"
-                        name="tanggal"
-                          required>
-        </div>
-
-        <div class="form group">
-            <p>Jenis Pesan</p>
-            <input type="radio" id="pertanyaan" name="jenis pesan"
-                     value="pertanyaan" required>
-                     <label for="pertanyaan">Pertanyaan</label><br>
-            <input type="radio" id="saran" name="jenis pesan"
-                        value="saran" >
-            <label for="saran">Saran</label>
-        </div>
-
-        <div class="form group">
-            <label for="prodi">Program Studi</label>
-            <select class="input form" id="prodi" name="prodi" required>
-                <option value="">Pilih Program Studi</option>
-                <option value="informatika">Informatika</option>
-                <option value="sistem informasi">Sistem Informasi</option>
-                <option value="teknik komputer">Teknik Komputer</option>
-            </select>
-        </div>
-
-        <div class="form group">
-            <label for="pesan">Pesan</label><br>
-            <textarea class="input form"
-                      id="pesan"
-                        name="pesan"
-                            maxlength="300"
-                              placeholder="Tulis pesan Anda di sini..."
-                                required></textarea>
+          <label for="pesan">Pesan</label><br>
+          <textarea Class="input form"
+                    id="pesan"
+                    name="pesan"
+                    maxlength="300"
+                    placeholder="Tulis pesan Anda di sini..."
+                    required></textarea>
         </div>
 
         <buttom type="submit">Kirim</buttom>
-        <buttom type="reset">Reset</buttom>
-    </form>
-</section>
+        <buttom type="reset">Batal</buttom>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fahri Septa Ramadhan [2622500006]</p>
+  </footer>
+</body>
+</html>
