@@ -34,4 +34,4 @@
 
 ## GitHub Pages
 
-URL: [tempel URL GitHub Pages Pertemuan 3]
+URL: [https://2622500006.github.io/2622500006-PWD-SI1A-26271/pertemuan-03/index.html]
