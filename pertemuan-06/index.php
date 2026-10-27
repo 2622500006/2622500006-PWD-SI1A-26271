@@ -1,3 +1,7 @@
+<?php
+// Pengujian awal eksekusi PHP.
+echo "PHP berhasil dijalankan.";
+?>
 <!DOCTYPE html>
 <html lang="id">
   <head>
