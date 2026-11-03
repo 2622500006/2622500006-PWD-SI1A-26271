@@ -42,7 +42,7 @@ echo "PHP berhasil dijalankan.";
         <h2>Selamat Datang</h2>
         <p>Halo, saya Nama Mahasiswa. Saya Sedang Mempelajari Pemrograman Web Dasar.</p>
 
-        <img src="img/Foto Profil.jpeg" alt="Foto Profil Nama Mahasiswa" />
+        <img src="foto.jpeg" alt="Foto Profil Nama Mahasiswa">
       </section>
 
       <section id="about" >
