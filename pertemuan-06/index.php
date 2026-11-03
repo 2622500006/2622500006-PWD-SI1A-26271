@@ -1,7 +1,3 @@
-<?php
-// Pengujian awal eksekusi PHP.
-echo "PHP berhasil dijalankan.";
-?>
 <!DOCTYPE html>
 <html lang="id">
   <head>
@@ -25,15 +21,15 @@ echo "PHP berhasil dijalankan.";
           aria-expanded="false"
         >
           &#9776;
-        </button>  
+        </button>
       </div>
 
       <nav>
         <ul id="navMenu">
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
-          <li><a href="#contact">Kontak</a></li> 
-        </ul> 
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -42,60 +38,75 @@ echo "PHP berhasil dijalankan.";
         <h2>Selamat Datang</h2>
         <p>Halo, saya Nama Mahasiswa. Saya Sedang Mempelajari Pemrograman Web Dasar.</p>
 
-        <img src="foto.jpeg" alt="Foto Profil Nama Mahasiswa">
+        <img src="foto.jpeg" alt="Foto Profil Nama Mahasiswa" />
       </section>
 
-      <section id="about" >
+      <section id="about">
         <h2>Tentang Saya</h2>
 
         <article>
-           <h3>Profil Singkat</h3>
-           <p>Saya Mahasiswa Program Studi Informasi.</p>
+          <h3>Profil Singkat</h3>
+          <p>Saya Mahasiswa Program Studi Informasi.</p>
 
-           <h3>Target Belajar</h3>
+          <h3>Target Belajar</h3>
 
-           <ol>
-             <li>Memahami Stuktur HTML5.</li>
-             <li>Menuysun halaman web semantik</li>
-             <li>Memvalidasi dokumen HTML.</li>
-           </ol>
-         </article>
-       </section>
+          <ol>
+            <li>Memahami Struktur HTML5.</li>
+            <li>Menyusun halaman web semantik.</li>
+            <li>Memvalidasi dokumen HTML.</li>
+          </ol>
+        </article>
+      </section>
 
-       <section id="contact">
-         <h2>Kontak</h2>
+      <section id="contact">
+        <h2>Kontak</h2>
 
-         <p>
-           Kunjungi
-           <a href="https://github.com/2622500006/2622500006-PWD-SI1A-26271.">Profil GITHUB saya</a>.
-         </p>
+        <p>
+          Kunjungi
+          <a href="https://github.com/2622500006/2622500006-PWD-SI1A-26271">Profil GITHUB saya</a>.
+        </p>
 
-         <form id="contactForm" action="index.html" method="get" novalidate>
-           <div class="fprm-group">
-             <label for="nama">Nma Lengkap</label><br> />
+        <form id="contactForm" action="index.php" method="get" novalidate>
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label><br />
 
-             <input
-               class="input-form"
-               type="text"
-               id="nama"
-               name="nama"
-               placeholder="Masukkan nama lengkap"
-               minlength="3"
-               maxlength="50"
-               required
-             />
-           </div> 
+            <input
+              class="input-form"
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama lengkap"
+              minlength="3"
+              maxlength="50"
+              required
+            />
+          </div>
 
-           <div class="form-group">
-             <label for="email">Email</label><br />
+          <div class="form-group">
+            <label for="email">Email</label><br />
 
-             <input class="input-form" type="email" id="email" name="email"
-placeholder="nama@email.com" required />
-           <div class="form-group" >
-             <label for="semester">Semester</label><br> />
+            <input
+              class="input-form"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nama@email.com"
+              required
+            />
+          </div>
 
-             <input class="input-form" type="number" id="semester" name="semester" min="1" max="14"
-required />
+          <div class="form-group">
+            <label for="semester">Semester</label><br />
+
+            <input
+              class="input-form"
+              type="number"
+              id="semester"
+              name="semester"
+              min="1"
+              max="14"
+              required
+            />
           </div>
 
           <div class="form-group">
@@ -114,20 +125,20 @@ required />
             <label for="saran">Saran</label>
           </div>
 
-          </div class="form-group">
-             <p>Topik yang Diminati</p>
+          <div class="form-group">
+            <p>Topik yang Diminati</p>
 
-             <input type="checkbox" id="minat-html" name="minat" value="HTML" />
-             <label for="minat-html">HTML</label>
+            <input type="checkbox" id="minat-html" name="minat" value="HTML" />
+            <label for="minat-html">HTML</label>
 
-             <input type="checkbox" id="minat-css" name="minat" value="CSS" />
-             <label for="minat-css">CSS</label>
+            <input type="checkbox" id="minat-css" name="minat" value="CSS" />
+            <label for="minat-css">CSS</label>
           </div>
 
           <div class="form-group">
             <label for="prodi">Program Studi</label><br />
 
-            <select class="input-form" id="prodi" name="prodi" required></select>
+            <select class="input-form" id="prodi" name="prodi" required>
               <option value="">-- Pilih Program Studi --</option>
               <option value="SI">Sistem Informasi</option>
               <option value="TI">Teknik Informatika</option>
@@ -155,7 +166,7 @@ required />
     </main>
 
     <footer>
-      <p>>&copy; 2026 Nama Mahasiswa [NIM]</p>
+      <p>&copy; 2026 Nama Mahasiswa [NIM]</p>
     </footer>
     <script src="script.js"></script>
   </body>
